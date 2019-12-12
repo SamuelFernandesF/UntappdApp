@@ -88,7 +88,7 @@ class Beer extends CI_Controller {
 
             $beer->checkinCount = sizeof($checkins);
             $beer->uniqueCheckins = $uniqueCheckins;
-            $beer->rating = $rating;
+            $beer->rating = round($rating, 2);
             $beer->checkins = $checkins;
         }
         echo json_encode($beer);

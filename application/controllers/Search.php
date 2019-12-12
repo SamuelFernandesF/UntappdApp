@@ -49,7 +49,7 @@ class Search extends CI_Controller {
 				if($checkins) foreach($checkins as $checkin) { $rating += $checkin->rating; }
 				$rating = $rating/sizeof($checkins);
 				$beer->checkins = sizeof($checkins);
-				$beer->rating = $rating;
+				$beer->rating = round($rating, 2);
 			}
 		}
 		$data = $this->load->view('beersResult', $data, TRUE);
@@ -94,7 +94,7 @@ class Search extends CI_Controller {
 					}
 					// Divido e showpeta.
 					$pubRating = $pubRating/sizeof($beersFromPub);
-					$pub->rating = $pubRating;
+					$pub->rating = round($pubRating, 2);
 				} else {
 					$pub->checkins = 0;
 					$pub->rating = 0;
