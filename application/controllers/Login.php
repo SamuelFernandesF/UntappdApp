@@ -17,6 +17,7 @@ class Login extends CI_Controller {
 		if ($user) {
 			$this->session->id = $user->id ;
 			$this->session->name = $user->name;
+			$this->session->picture = $user->picture;
 			$data['response'] = 'true';
 			$data['user'] = $user;
 		} else {

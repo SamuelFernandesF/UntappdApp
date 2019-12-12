@@ -1,4 +1,4 @@
-<body> 
+
     <!-- USER PROFILE -->
     <div class="container-fluid h-100">
         <div class="row">

@@ -72,18 +72,32 @@
         <div class="col-3 px-0 h-100">
             <div class="row w-100 mx-0 h-100">
                 <div class="col-3 px-0 d-flex align-items-center justify-content-center" style="border-right:1px solid #f8f8f8;height:100%">
-                    <div class="" style="
-                        width: 40px;
-                        height:40px;
-                        border-radius : 100%;
-                        background : #278bcb;
-                        display: flex;
-                        align-items : center;
-                        justify-content : center;
-                    ">
-                        <img height="20px" src="<?php echo base_url() ?>/assets/icons/beer1.svg">
-                    </div>
+                    <a href="<?php echo base_url().'Profile/user/'.$_SESSION['id']; ?>">
+                        <?php 
+                            $position = strpos($_SESSION['picture'], 'assets');
+                            if($position !== false) {
+                        ?>
+                            <img class="rounded-circle" height="30px" width="30px" src="<?php echo base_url().$_SESSION['picture'] ?>";>
+                        <?php } else { ?>
+                            
+                            <div style="
+                                height: 30px;
+                                width: 30px;
+                                background: #278bcb;
+                                border-radius: 100%;
+                                margin: auto;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: 1em;
+                                color: white;
+                            ">
+                                <span><?php echo $_SESSION['name'][0]; ?></span>
+                            </div>
+                        <?php } ?>
+                    </a>
                 </div>
+
                 <div class="col-8 d-flex align-items-center h-100">
                     <ul class="list-inline list-unstyled mb-0">
                         <li class="list-inline-item" style="color : #278bcb; margin-left:10px;cursor:pointer"> 
