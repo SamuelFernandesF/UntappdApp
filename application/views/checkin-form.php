@@ -198,7 +198,7 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    
 
         const controlClick = function (element, target) {
             const targetElement = $('.' + target);
@@ -484,8 +484,6 @@
             starWidth: '15px',
             ratedFill: "#707bf3"
         });
-
-    })
 </script>
 
 

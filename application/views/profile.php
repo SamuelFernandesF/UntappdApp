@@ -186,9 +186,21 @@
     </div>
 
 <script>
-    $('document').ready(function() {
 
-        loadCheckouts();
+    loadCheckouts();
+
+    function loadCheckouts() {
+        var url = "<?php echo site_url('Profile/get_checkouts/'.$user->id); ?>"
+        $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "html",
+            success: function(data) {
+                $('#checkins-container').html(data);
+            }
+        });
+    }
+    $('document').ready(function() {
         loadFriends();
         loadSolicitations();
 
@@ -209,18 +221,6 @@
             $('.overflow').toggleClass('active');
             $('.description-form-box').toggleClass('active')
         });
-        
-        function loadCheckouts() {
-            var url = "<?php echo site_url('Profile/get_checkouts/'.$user->id); ?>"
-            $.ajax({
-                type: "GET",
-                url: url,
-                dataType: "html",
-                success: function(data) {
-                    $('#checkins-container').html(data);
-                }
-            });
-        }
 
         $('#userDescription').click(function() {
             $('.overflow').toggleClass('active');
