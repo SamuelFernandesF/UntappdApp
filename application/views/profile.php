@@ -256,7 +256,6 @@
                 url: url,
                 dataType: "html",
                 success: function(data) {
-                    console.log(data);
                     $('#friendsFromUser').html(data);
                 }
             });    

@@ -342,8 +342,7 @@
                         data: form.serialize(),
                         dataType: "html",
                         success: function(data) {
-                            data = JSON.parse(data)
-                            console.log(data);
+                            data = JSON.parse(data);
                             if(data.response === 'true') {
                                 
                                 $('#beerSelector').append($('<option>', {
@@ -383,7 +382,6 @@
 
                 form = $('#pub-container');
                 var url = "<?php echo site_url('Pub/save'); ?>"
-                
                 var send = true;
 
                 if ($('#pub-container input[name="name"]').val() === '') send = false ;
@@ -458,8 +456,7 @@
             data.push({name : 'rating', value : $('#rateYo').rateYo("rating")});
 
             var send = true;
-            
-            console.log($('#checkin-container textarea[name="comment"]').val())
+
             if ($('#checkin-container textarea[name="comment"]').val() === '') send = false ;
             
             if(send) {
@@ -469,12 +466,12 @@
                     data: data,
                     dataType: "html",
                     success: function(data) {
-                        data = JSON.parse(data)
-                        console.log(data);
+                        data = JSON.parse(data);
                         if(data.response === 'true') {
-                            $('.overflow').toggleClass('active')
-                            $('.checkin-card').toggleClass('active')
-                            $('.form-card').toggleClass('active')
+                            $('.overflow').toggleClass('active');
+                            $('.checkin-card').toggleClass('active');
+                            $('.form-card').toggleClass('active');
+                            loadCheckouts();
                         }
                     }
                 });
