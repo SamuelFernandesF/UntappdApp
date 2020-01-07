@@ -49,7 +49,7 @@
             </div>
 
             <!-- CONTENT -->
-            <div class="col-7 offset-3 content-container">
+            <div class="col-9 offset-3 content-container">
                 <div class="row py-4 px-5">
                     <div class="col-12" style="">
 
@@ -57,26 +57,6 @@
                     <div class="col-12 content-box px-0" id="checkins-container">
                     </div>
                 </div>
-            </div>
-
-            <!-- RIGHT SIDEBAR -->
-            <div class="col-2 sidebar-right">
-                <span class="title">
-                    Badges
-                </span>
-                <ul class="list">
-                    <li>Bem vindo</li>
-                    <li>Bebendo no happy our</li>
-                    <li>Ufa, hoje é sexta - feira</li>
-                    <li>Expandindo horizontes</li>
-                </ul>
-                <span class="title">
-                    Statistics
-                </span>
-                <ul class="list">
-                    <li>Total : </li>
-                    <li>Beers : </li>
-                </ul>
             </div>
         </div>
     </div>
