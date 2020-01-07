@@ -72,7 +72,7 @@ if($checkins) {
                                                         align-items:center;
                                                         justify-content:center;
                                                         cursor:pointer;
-                                                    '>" . $user->name[0] ."</div>";
+                                                    '>" . $comment->userData->name[0] ."</div>";
                                             }
                                         ?>
                                         </div>
