@@ -1,6 +1,6 @@
 # Untappd-ish app
 
-OBS1 : This is an old code that i've had written between 2015/16, i cannot recall the exact date.
+OBS1 : This is an old code that i've had written in 2017.
 
 ### 1. Usage
 1.1 - Clone or download the project. </br>
