@@ -39,6 +39,7 @@ class Beer extends CI_Controller {
             }
         }
         $data['userFriends'] = $usersArray;
+        $data['class'] = 'beer-friends';
         $data = $this->load->view('friends', $data, TRUE);
 		echo $data;
     }

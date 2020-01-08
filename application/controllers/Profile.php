@@ -52,6 +52,7 @@ class Profile extends CI_Controller {
 				}
 			}
 		}
+		$inf['class'] = 'user-friends';
 		$data = $this->load->view('friends', $inf, TRUE);
 		echo $data;
 	}

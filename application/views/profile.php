@@ -119,13 +119,6 @@
                     <li>Ufa, hoje é sexta - feira</li>
                     <li>Expandindo horizontes</li>
                 </ul>
-                <span class="title">
-                    Statistics
-                </span>
-                <ul class="list">
-                    <li>Total : <?php echo $user->total_beers; ?></li>
-                    <li>Beers : <?php echo $user->beer_counter; ?></li>
-                </ul>
             </div>
         </div>
     </div>
